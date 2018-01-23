@@ -146,15 +146,15 @@ class Character(BasicAttributesMixin, AppearenceMixin):
         """
         The character's armor class based on their starting equipment.
         """
-        if "Leather Armor" in self.equipment:
+        if "Armatura di Cuoio" in self.equipment:
             ac = 7
-        elif "Chain Armor" in self.equipment:
+        elif "Armatura di Maglia" in self.equipment:
             ac = 5
-        elif "Plate Armor" in self.equipment:
+        elif "Armatura di Piastre" in self.equipment:
             ac = 3
         else: # no armor
             ac = 9
-        if "Shield" in self.equipment:
+        if "Scudo" in self.equipment:
             ac = ac - 1
         return ac
 
@@ -598,10 +598,10 @@ class PahvelornCharacter(HitDiceMixin, LBBCharacter):
           http://www.necropraxis.com/2012/11/11/adjusted-attack-ranks/
         """
         return {
-            'Fighter': 7,
-            'Cleric': 9,
+            'Guerriero': 7,
+            'Chierico': 9,
             'Thief': 9,
-            'Magic-User': 11,
+            'Mago': 11,
         }[self.character_class['name']]
 
     def get_spell(self):

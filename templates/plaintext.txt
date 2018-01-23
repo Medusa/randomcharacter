@@ -1,17 +1,17 @@
 {{ c.system }} {{ c.class_name }}
 
-{% if c.hp %}HP: {{ c.hp }}{% else %}HD: {{ c.hd }}{% endif %}   AC: {{ c.ac }}   XP: 0
+{% if c.hp %}PF: {{ c.hp }}{% else %}DV: {{ c.hd }}{% endif %}   CA: {{ c.ac }}   PX: 0
 
-Attributes:
+Abilità:
 
-  STR: {{ c.attr.STR }}
+  FOR: {{ c.attr.STR }}
   INT: {{ c.attr.INT }}
-  WIS: {{ c.attr.WIS }}
-  DEX: {{ c.attr.DEX }}
-  CON: {{ c.attr.CON }}
-  CHA: {{ c.attr.CHA }}
+  SAG: {{ c.attr.WIS }}
+  COS: {{ c.attr.CON }}
+  DES: {{ c.attr.DEX }}
+  CAR: {{ c.attr.CHA }}
 
-Saves:
+Tiri Salvezza:
 
   {{ c.saves_with_names.poison.0 }}: {{ c.saves_with_names.poison.1 }}
   {{ c.saves_with_names.wands.0 }}: {{ c.saves_with_names.wands.1 }}
@@ -19,21 +19,19 @@ Saves:
   {{ c.saves_with_names.breath.0 }}:{{ c.saves_with_names.breath.1 }}
   {{ c.saves_with_names.magic.0 }}: {{ c.saves_with_names.magic.1 }}
 {% if c.to_hit %}
-To Hit Table:
+Tiri per Colpire:
 
-  AC:   {% for ac, roll in c.to_hit %}{{ "%2d"|format(ac) }} {% endfor %}
-  Roll: {% for ac, roll in c.to_hit %} {{ "%2d"|format(roll) }} {% endfor %}
+  CA:   {% for ac, roll in c.to_hit %}{{  "%2d"|format(ac) }} {% endfor %}
+  Tiro: {% for ac, roll in c.to_hit %} {{ "%2d"|format(roll) }} {% endfor %}
 {% else %}
 To Hit Bonuses:
 
   Melee: {{ c.melee_attack_bonus }}
   Ranged: {{ c.ranged_attack_bonus }}
 {% endif %}
-Languages: Common, Alignment{% for language in c.languages|sort %}, {{ language }}{% endfor %}
+Linguaggi: Comune, Lingua dell'Allineamento{% for language in c.languages|sort %}, {{ language }}{% endfor %}
 
-Optional Appearance:  {{ c.appearance }}
-
-Equipment:
+Equipaggiamento:
   {% for item in c.equipment %}
    * {{ item -}}
   {% endfor %}
@@ -49,15 +47,15 @@ Thief Skills:
   {{ skill }}: {{ chance -}}
 {% endfor -%}
 {% endif %}
-{% if c.class_name == 'Cleric' -%}
-Turn Undead:
+{% if c.class_name == 'Chierico' -%}
+Scacciare i Non-Morti:
 {% for undead, roll in c.character_class.turn %}
   {{ undead }}: {{ roll -}}
 {% endfor -%}
 {% endif %}
 {% if c.spell -%}
-Spells:
-  Level 1: {{ c.spell }}
+Incantesimi:
+  Primo Livello: {{ c.spell }}
 {% endif %}
 {% if c.grimoires -%}
 Grimoires:

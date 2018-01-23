@@ -19,9 +19,9 @@ STR, INT, WIS, DEX, CON, CHA = range(6)
 20 example languages from Moldvay.
 """
 LANGUAGES = [
-    'Bugbear', 'Doppleganger', 'Dragon', 'Dwarvish', 'Elvish', 'Gargoyle',
-    'Gnoll', 'Gnome', 'Goblin', 'Halfling', 'Harpy', 'Hobgoblin', 'Kobold',
-    'Lizard Man','Medusa', 'Minotaur', 'Ogre', 'Orc', 'Pixie', 'Human Dialect'
+    'Bugbear', 'Coboldo', 'Draghesco', 'Elfico', 'Gargoyle', 'Gnoll', 'Gnomesco',
+    'Goblin', 'Halfling', 'Hobgoblin', 'Lingua degli Orchetti', 'Lingua degli Orchi e dei Giganti', 'Lingua degli Uomini-Lucertola', 'Lingua dei Folletti',
+    'Lingua dei Minotauri', 'Lingua delle Arpie', 'Lingua di Medusa', 'Metamorfosis', 'Nanesco', 'Altra Lingua Umana'
 ]
 
 
@@ -29,11 +29,11 @@ LANGUAGES = [
 The 5 traditional D&D saving throws.
 """
 SAVES = {
-    'poison': 'Death Ray or Poison',
-    'wands': 'Magical Wands',
-    'stone': 'Paralysis or Turn to Stone',
-    'breath': 'Dragon Breath',
-    'magic': 'Rods, Staves, or Spells'
+    'poison': 'Raggio della Morte o Veleno',
+    'wands': 'Bacchette Magiche',
+    'stone': 'Pietrificazione',
+    'breath': 'Soffio del Drago',
+    'magic': 'Bastoni Magici e Incantesimi'
 }
 
 
@@ -43,53 +43,53 @@ on the topic.
 """
 
 CLERIC = {
-    'name': 'Cleric',
+    'name': 'Chierico',
     'equipment': [
-        ["Cudgel", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "4 gp"],
-        ["Cudgel", "Shield", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "Wooden Cross", "4 gp"],
-        ["Mace", "Leather Armor", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "5 gp"],
-        ["Quarter-Staff", "Leather Armor", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "12 Iron Spikes", "Wooden Cross", "3 Stakes & Mallet", "Steel Mirror", "10 gp"],
-        ["Chain Armor", "War Hammer", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "2 Small Sacks", "8 gp"],
-        ["Chain Armor", "Shield", "Mace", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "Wooden Cross", "2 Small Sacks", "8 gp"],
-        ["Chain Armor", "Shield", "War Hammer", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "2 Small Sacks", "3 Stakes & Mallet", "Steel Mirror", "10 gp"],
-        ["Plate Armor", "Shield", "Mace", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "Wooden Cross", "10 gp"],
-        ["Plate Armor", "Shield", "War Hammer", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "Small Sack", "2 gp"],
-        ["Plate Armor", "Quarter-Staff", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "50' Rope", "Silver Cross", "4 gp"],
-        ["Cudgel", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "Scroll", "4 gp"],
-        ["Plate Armor", "Shield", "Mace", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "50' Rope", "Silver Cross", "10 gp"],
-        ["Leather Armor", "Mace", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "Scroll", "2 Flasks oil", "1 gp"],
-        ["Plate Armor", "Shield", "Helmet", "War Hammer", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "50' Rope", "Silver Cross", "3 Stakes & Mallet", "Steel Mirror", "12 gp"],
-        ["Chain Armor", "War Hammer", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "Wooden Cross", "Scroll", "10 gp"],
-        ["Plate Armor", "Shield", "Helmet", "Mace", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "50' Rope", "Silver Cross", "Vial Holy Water", "12 Iron Spikes", "3 Stakes & Mallet", "Small Sack", "10 gp"]
+        ["Randello", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "4 MO"],
+        ["Randello", "Scudo", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro di Legno", "4 MO"],
+        ["Mazza", "Armatura di Cuoio", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "5 MO"],
+        ["Bastone Ferrato", "Armatura di Cuoio", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "12 Chiodi di Ferro", "Simbolo Sacro di Legno", "3 Picchetti e Mazzuolo", "Specchio d'Acciaio", "10 MO"],
+        ["Armatura di Maglia", "Martello da Guerra", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "2 Sacchi Piccoli", "8 MO"],
+        ["Armatura di Maglia", "Scudo", "Mazza", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro di Legno", "2 Sacchi Piccoli", "8 MO"],
+        ["Armatura di Maglia", "Scudo", "Martello da Guerra", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "2 Sacchi Piccoli", "3 Picchetti e Mazzuolo", "Specchio d'Acciaio", "10 MO"],
+        ["Armatura di Piastre", "Scudo", "Mazza", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro di Legno", "10 MO"],
+        ["Armatura di Piastre", "Scudo", "Martello da Guerra", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "Sacco Piccolo", "2 MO"],
+        ["Armatura di Piastre", "Bastone Ferrato", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro d'Argento", "4 MO"],
+        ["Randello", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "Pergamena con un Incantesimo di Primo Livello", "4 MO"],
+        ["Armatura di Piastre", "Scudo", "Mazza", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro d'Argento", "10 MO"],
+        ["Armatura di Cuoio", "Mazza", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "Pergamena con un Incantesimo di Primo Livello", "2 Fiaschette d'Olio per Lanterna", "1 MO"],
+        ["Armatura di Piastre", "Scudo", "Elmo Protettivo", "Martello da Guerra", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro d'Argento", "3 Picchetti e Mazzuolo", "Specchio d'Acciaio", "12 MO"],
+        ["Armatura di Maglia", "Martello da Guerra", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Simbolo Sacro di Legno", "Pergamena con un Incantesimo di Primo Livello", "10 MO"],
+        ["Armatura di Piastre", "Scudo", "Elmo Protettivo", "Mazza", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Simbolo Sacro d'Argento", "Fialetta d'Acquasanta", "12 Chiodi di Ferro", "3 Picchetti e Mazzuolo", "Sacco Piccolo", "10 MO"]
     ],
     'hitdice': 6,
     'saves': {
         'poison': 11, 'wands': 12, 'stone': 14, 'breath': 16, 'magic': 15
     },
     'turn': [
-        ('Skeleton', 7), ('Zombie', 9), ('Ghoul', 11), ('Wight', 'N')
+	('Scheletro', 7), ('Zombi', 9), ('Ghoul', 11), ('Spettro', 'N')
     ],
 }
 
 FIGHTER = {
-    'name': "Fighter",
+    'name': "Guerriero",
     'equipment': [
-        ["Spear", "Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "3 gp"],
-        ["Cudgel", "Leather Armor", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "1 gp"],
-        ["Leather Armor", "Morning Star", "Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "3 gp"],
-        ["Leather Armor", "Battle axe", "Hand axe", "Dagger", "Sling", "Pouch With 20 Sling Bullets", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "7 gp"],
-        ["Chain Armor", "Spear", "Dagger", "Sling", "Pouch With 20 Sling Bullets", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "11 gp"],
-        ["Chain Armor", "Shield", "Sword", "Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "4 gp"],
-        ["Chain Armor", "Spear", "Light Crossbow", "Case With 30 Quarrels", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "11 gp"],
-        ["Plate Armor", "Shield", "Sword", "Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "4 gp"],
-        ["Plate Armor", "Two-Handed Sword", "3 Daggers", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "2 Flasks oil", "9 gp"],
-        ["Plate Armor", "Shield", "Sword", "Light Crossbow", "Case With 30 Quarrels", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "2 gp"],
-        ["Plate Armor", "Flail", "Dagger", "35 Short bow", "Quiver of 20 Arrows", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "Small Sack", "10 gp"],
-        ["Plate Armor", "Shield", "Sword", "Light Crossbow", "Case With 30 Quarrels", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "5 gp"],
-        ["Plate Armor", "Helmet", "2 Battle Axes", "Dagger", "Light Crossbow", "Case With 30 Quarrels", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "5 Flasks oil", "15 gp"],
-        ["Plate Armor", "Two-Handed Sword", "Dagger", "Short bow", "Quiver of 20 Arrows", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "2 Small Sacks", "15 gp"],
-        ["Plate Armor", "Halberd", "Dagger", "Long bow", "Quiver of 20 Arrows", "2 Silver Tipped Arrows", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "50' Rope", "10 gp"],
-        ["Plate Armor", "Shield", "Helmet", "Sword", "2 Daggers", "Light Crossbow", "Case With 30 Quarrels", "4 Silver Tipped Quarrels", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "9 gp"]
+        ["Lancia", "Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "3 MO"],
+        ["Randello", "Armatura di Cuoio", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "1 MO"],
+        ["Armatura di Cuoio", "Mazza Chiodata", "Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "3 MO"],
+        ["Armatura di Cuoio", "Battle Ascia", "Ascia", "Pugnale", "Fionda", "Borsa con 20 Proiettili da Fionda", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "7 MO"],
+        ["Armatura di Maglia", "Lancia", "Pugnale", "Fionda", "Borsa con 20 Proiettili da Fionda", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "11 MO"],
+        ["Armatura di Maglia", "Scudo", "Spada", "Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "4 MO"],
+        ["Armatura di Maglia", "Lancia", "Balestra Leggera", "Contenitore con 30 Dardi", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "11 MO"],
+        ["Armatura di Piastre", "Scudo", "Spada", "Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "4 MO"],
+        ["Armatura di Piastre", "Spadone a Due Mani", "3 Pugnali", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "2 Fiaschette d'Olio per Lanterna", "9 MO"],
+        ["Armatura di Piastre", "Scudo", "Spada", "Balestra Leggera", "Contenitore con 30 Dardi", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "2 MO"],
+        ["Armatura di Piastre", "Flail", "Pugnale", "Arco Corto", "Faretra con 20 Frecce", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Sacco Piccolo", "10 MO"],
+        ["Armatura di Piastre", "Scudo", "Spada", "Balestra Leggera", "Contenitore con 30 Dardi", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "5 MO"],
+        ["Armatura di Piastre", "Elmo Protettivo", "2 Asce da Battaglia", "Pugnale", "Balestra Leggera", "Contenitore con 30 Dardi", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "5 Fiaschette d'Olio per Lanterna", "15 MO"],
+        ["Armatura di Piastre", "Spadone a Due Mani", "Pugnale", "Arco Corto", "Faretra con 20 Frecce", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "2 Sacchi Piccoli", "15 MO"],
+        ["Armatura di Piastre", "Halberd", "Pugnale", "Arco Lungo", "Faretra con 20 Frecce", "2 Frecce con la Punta d'Argento", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Corda di 15 m", "10 MO"],
+        ["Armatura di Piastre", "Scudo", "Elmo Protettivo", "Spada", "2 Pugnali", "Balestra Leggera", "Contenitore con 30 Dardi", "4 Dardi con la Punta d'Argento", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "9 MO"]
     ],
     'hitdice': 8,
     'saves': {
@@ -108,24 +108,24 @@ SORCERER = {
 }
 
 MAGICUSER = {
-    'name': "Magic-User",
+    'name': "Mago",
     'equipment': [
-        ["Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "4 gp"],
-        ["2 Daggers", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "2 Flasks oil", "50' Rope", "7 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "7 gp"],
-        ["Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "Vial of Holy Water", "9 gp"],
-        ["Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "10' Pole", "5 Flasks of oil", "Silver Mirror", "Belladona", "9 gp"],
-        ["Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "2 Vials Holy Water", "4 gp"],
-        ["3 Daggers", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "Vial of Holy Water", "16 gp"],
-        ["Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "50' Rope", "2 Vials Holy Water", "24 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "10' Pole", "67 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "50' Rope", "77 gp"],
-        ["Dagger", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "Scroll", "10' Pole", "4 gp"],
-        ["2 Daggers", "6 Torches", "Backpack", "Waterskin", "1 Week Iron Rations", "Scroll", "50' Rope", "11 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "Scroll", "10' Pole", "7 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "Scroll", "50' Rope", "17 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "Scroll", "10' Pole", "27 gp"],
-        ["Dagger", "Backpack", "Waterskin", "Lantern", "4 Flasks oil", "1 Week Iron Rations", "Scroll", "50' Rope", "37 gp"]
+        ["Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "4 MO"],
+        ["2 Pugnali", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "2 Fiaschette d'Olio per Lanterna", "Corda di 15 m", "7 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "7 MO"],
+        ["Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "Fialetta of d'Acquasanta", "9 MO"],
+        ["Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "5 Fiaschette d'Olio per Lanterna", "Specchietto d'Argento", "Mazzetto di Belladonna", "9 MO"],
+        ["Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "2 Fialette d'Acquasanta", "4 MO"],
+        ["3 Pugnali", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "Fialetta of d'Acquasanta", "16 MO"],
+        ["Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Corda di 15 m", "2 Fialette d'Acquasanta", "24 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pertica di 3 m", "67 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Corda di 15 m", "77 MO"],
+        ["Pugnale", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pergamena con un Incantesimo di Primo Livello", "Pertica di 3 m", "4 MO"],
+        ["2 Pugnali", "6 Torce", "Zaino di Cuoio", "Borraccia", "1 Settimana di Razioni Conservate", "Pergamena con un Incantesimo di Primo Livello", "Corda di 15 m", "11 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pergamena con un Incantesimo di Primo Livello", "Pertica di 3 m", "7 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pergamena con un Incantesimo di Primo Livello", "Corda di 15 m", "17 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pergamena con un Incantesimo di Primo Livello", "Pertica di 3 m", "27 MO"],
+        ["Pugnale", "Zaino di Cuoio", "Borraccia", "Lanterna", "4 Fiaschette d'Olio per Lanterna", "1 Settimana di Razioni Conservate", "Pergamena con un Incantesimo di Primo Livello", "Corda di 15 m", "37 MO"]
     ],
     'hitdice': 4,
     'saves': {
@@ -133,8 +133,8 @@ MAGICUSER = {
     },
     'spells': [
         # Original 8 D&D Spells
-        'Detect Magic', 'Hold Portal', 'Read Magic', 'Read Languages',
-        'Protection from Evil', 'Light', 'Charm Person', 'Sleep',
+        'Individuazione del Magico', 'Blocca Porta', 'Lettura del Magico', 'Lettura dei Linguaggi',
+        'Protezione dal Male', 'Luce', 'Charme', 'Sonno',
         # Basic D&D added 4 new Spells
         'Floating Disc', 'Magic Missile', 'Shield', 'Ventriloquism'
     ],
@@ -177,7 +177,7 @@ THIEF = {
 }
 
 DWARF = {
-    'name': 'Dwarf',
+    'name': 'Nano',
     'hitdice': 8,
     'saves': {
         'poison': 10, 'wands': 11, 'stone': 12, 'breath': 13, 'magic': 14
@@ -186,7 +186,7 @@ DWARF = {
 }
 
 ELF = {
-    'name': 'Elf',
+    'name': 'Elfo',
     'hitdice': 6,
     'saves': {
         'poison': 12, 'wands': 13, 'stone': 13, 'breath': 15, 'magic': 15
@@ -347,30 +347,30 @@ LOTFP = {
         'Unseen Servant'
     ],
     'hitdice': {
-        'Cleric': 6,
-        'Fighter': 8,
-        'Magic-User': 6,
+        'Chierico': 6,
+        'Guerriero': 8,
+        'Mago': 6,
         'Thief': 6,
-        'Dwarf': 10,
-        'Elf': 6,
+        'Nano': 10,
+        'Elfo': 6,
         'Halfling': 6
     },
     'lotfp_saves': {
-        'Cleric': {'poison': 11, 'wands': 12, 'stone': 14, 'breath': 16, 'magic': 15,},
-        'Fighter': {'poison': 12, 'wands': 13, 'stone': 14, 'breath': 15, 'magic': 16},
-        'Magic-User': {'poison': 13, 'wands': 13, 'stone': 13, 'breath': 16, 'magic': 14},
+        'Chierico': {'poison': 11, 'wands': 12, 'stone': 14, 'breath': 16, 'magic': 15,},
+        'Guerriero': {'poison': 12, 'wands': 13, 'stone': 14, 'breath': 15, 'magic': 16},
+        'Mago': {'poison': 13, 'wands': 13, 'stone': 13, 'breath': 16, 'magic': 14},
         'Thief': {'poison': 16, 'wands': 14, 'stone': 14, 'breath': 15, 'magic': 14},
-        'Dwarf': {'poison': 8, 'wands': 9, 'stone': 10, 'breath': 13, 'magic': 12},
-        'Elf': {'poison': 12, 'wands': 13, 'stone': 13, 'breath': 15, 'magic': 15},
+        'Nano': {'poison': 8, 'wands': 9, 'stone': 10, 'breath': 13, 'magic': 12},
+        'Elfo': {'poison': 12, 'wands': 13, 'stone': 13, 'breath': 15, 'magic': 15},
         'Halfling': {'poison': 8, 'wands': 9, 'stone': 10, 'breath': 13, 'magic': 12}
     },
     'min_hp': {
-        'Cleric': 4,
-        'Fighter': 8,
-        'Magic-User': 3,
+        'Chierico': 4,
+        'Guerriero': 8,
+        'Mago': 3,
         'Thief': 4,
-        'Dwarf': 6,
-        'Elf': 4,
+        'Nano': 6,
+        'Elfo': 4,
         'Halfling': 4
     },
     'saves': {
@@ -399,7 +399,7 @@ LOTFP = {
             ["Leather Armor", "Specialist Tools", "Standard Sword", "Dagger", "Garotte", "Chalk", "Soap", "Backpack", "Sack", "Tinderbox", "100' Rope", "Shortbow", "Lamp With 4 Flasks oil", "Quiver - 20 Arrows", "Steel Mirror", "Scroll Case: Local map and Kingdom map", "Holy Water", "2 day's Rations", "4 Cp"],
             ["Leather Armor", "Specialist Tools", "Standard Sword", "Dagger", "Garotte", "Whip", "Chalk", "Soap", "Backpack", "Sack", "Tinderbox", "100' Rope", "Shortbow", "Lamp With 4 Flasks oil", "Quiver - 20 Arrows", "Steel Mirror", "Scroll Case: Local map and Kingdom map", "Holy Water", "2 day's Rations", "4 Cp"],
         ],
-        'Cleric': [
+        'Chierico': [
             ["Spear", "Shield", "Rapier", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Wooden Cross", "3 Cp"],
             ["Spear", "Shield", "Mace", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "Wooden Cross"],
             ["Spear", "Shield", "Dagger", "Leather Armor", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "Wooden Cross"],
@@ -417,7 +417,7 @@ LOTFP = {
             ["Spear", "Polearm", "Shield", "Short Sword", "Chain Armor", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "Wooden Cross"],
             ["Spear", "Mace", "Shield", "Chain Armor", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "Shortbow", "Quiver With 20 Arrows ", "Wooden Cross"],
         ],
-        'Fighter': [
+        'Guerriero': [
             ["Spear", "Shield", "Rapier", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "4 Cp"],
             ["Spear", "Shield", "Standard Sword", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "1 Cp"],
             ["Spear", "Shield", "Dagger", "Leather Armor", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "1 Cp"],
@@ -435,7 +435,7 @@ LOTFP = {
             ["Spear", "Polearm", "Shield", "Short Sword", "Chain Armor", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "1 Cp"],
             ["Spear", "Standard Sword", "Shield", "Chain Armor", "day of Rations", "Sack", "3 Torches", "Soap", "Chalk", "Tinderbox", "50' Rope", "Backpack", "Iron Spike", "Shortbow", "Quiver With 20 Arrows ", "1 Cp"],
         ],
-        'Magic-User': [
+        'Mago': [
             ["Short Sword", "Garotte", "Spear", "Chalk", "Soap", "3 Torches", "Backpack", "Sack", "Tinderbox", "50' Rope", "1 day's Rations", "Steel Mirror", "11 Cp"],
             ["Leather Armor", "Dagger", "Chalk", "Soap", "3 Torches", "Backpack", "Sack", "Tinderbox", "50' Rope", "1 day's Rations", "Steel Mirror", "11 Cp"],
             ["Leather Armor", "Short Sword", "Garotte", "Chalk", "Soap", "3 Torches", "Backpack", "Sack", "Tinderbox", "50' Rope", "1 day's Rations", "1 sp 11 Cp"],
@@ -456,9 +456,9 @@ LOTFP = {
     }
 }
 
-LOTFP['equipment']['Elf'] = LOTFP['equipment']['Magic-User']
-LOTFP['equipment']['Dwarf'] = LOTFP['equipment']['Fighter']
-LOTFP['equipment']['Halfling'] = LOTFP['equipment']['Fighter']
+LOTFP['equipment']['Elfo'] = LOTFP['equipment']['Mago']
+LOTFP['equipment']['Nano'] = LOTFP['equipment']['Guerriero']
+LOTFP['equipment']['Halfling'] = LOTFP['equipment']['Guerriero']
 
 
 APPEARENCE = [

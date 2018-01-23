@@ -65,3 +65,17 @@ well either.
 [npcs]: http://character.totalpartykill.ca/npcs/
 [3d6]: http://character.totalpartykill.ca/3d6/
 [4d6]: http://character.totalpartykill.ca/4d6/
+
+
+## Differences Between The Original Generator & This Fork
+
+This fork is a partially Italian-language version of the random character generator
+by Ramanan Sivaranjan: the translation is intentionally incomplete because
+it is essentially limited so to get exclusively fully translated plaintext character sheets
+for the '3LBBs' characters.
+
+The plaintext template in itself presents 2 changes compared to the original one:
+a different order of abilities (with constitution placed before dexterity)
+and the absence of the appearance stats.
+
+That is all.
